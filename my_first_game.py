@@ -1,5 +1,12 @@
 '''my_first_game.py'''
-
+# A spaceship shooter game
+# Controls
+# Yellow Ship :
+# WSDA, Up down left right, respectively
+# left ctrl to shoot
+# Red ship :
+# Arrow keys to move
+# right ctrl to shoot
 import os
 import pygame
 pygame.mixer.init()

@@ -14,7 +14,7 @@ pygame.font.init()
 
 
 # Display set up
-WIDTH, HEIGHT = 900,500
+WIDTH, HEIGHT = 1000,500
 WIN = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("First Game")
 BORDER = pygame.Rect(WIDTH//2-5, 0, 10, HEIGHT)

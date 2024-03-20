@@ -35,23 +35,23 @@ RED_HIT = pygame.USEREVENT + 2
 MAX_AMMO = 3
 
 # Sounds
-BULLET_FIRE_SOUND = pygame.mixer.Sound(os.path.join('Assets', 'blaster.mp3'))
-BULLET_HIT_SOUND = pygame.mixer.Sound(os.path.join('Assets', 'hit.mp3'))
-LOSER_EXPLOSION = pygame.mixer.Sound(os.path.join('Assets','boom.mp3'))
+BULLET_FIRE_SOUND = pygame.mixer.Sound(os.path.join('blaster.mp3'))
+BULLET_HIT_SOUND = pygame.mixer.Sound(os.path.join('hit.mp3'))
+LOSER_EXPLOSION = pygame.mixer.Sound(os.path.join('boom.mp3'))
 
 # Image inserts
 SHIP_HEIGHT , SHIP_WIDTH = 50, 50
 VEL = 2
 SPACESHIP_IMAGE_A = pygame.image.load(
-    os.path.join('Assets','spaceship_yellow.png'))
+    os.path.join('spaceship_yellow.png'))
 YELLOW_SP = pygame.transform.rotate(pygame.transform.scale
                 (SPACESHIP_IMAGE_A, (SHIP_WIDTH,SHIP_HEIGHT)),90)
 SPACESHIP_IMAGE_B = pygame.image.load(
-    os.path.join('Assets','spaceship_red.png'))
+    os.path.join('spaceship_red.png'))
 RED_SP = pygame.transform.rotate(pygame.transform.scale
             (SPACESHIP_IMAGE_B, (SHIP_WIDTH,SHIP_HEIGHT)),270)
 
-BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join('Assets','space.png')) ,(WIDTH, HEIGHT))
+BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join('space.png')) ,(WIDTH, HEIGHT))
 
 # Draw to screen function
 def draw_window(red, yellow, yellow_bullets, red_bullets, red_health, yellow_health):
